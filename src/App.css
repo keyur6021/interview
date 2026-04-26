@@ -229,3 +229,9 @@ main {
     border-right-color: var(--border);
   }
 }
+
+.loading {
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 700;
+}

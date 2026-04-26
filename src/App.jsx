@@ -1,8 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import CounterApp from './components/CounterApp.jsx'
 import InterviewForm from './components/InterviewForm.jsx'
-import './App.css'
 import FetchApi from './components/FetchAPi.jsx'
+import ZustandDemo from './components/zustand/ZustandDemo.jsx'
+import './App.css'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Link to="/counter" className="nav-link">Counter</Link>
           <Link to="/interview" className="nav-link">Interview Form</Link>
           <Link to="/fetch-api" className="nav-link">Fetch API</Link>
+          <Link to="/zustand" className="nav-link">Zustand</Link>
         </nav>
       </header>
       <main>
@@ -21,6 +23,7 @@ function App() {
           <Route path="/counter" element={<CounterApp />} />
           <Route path="/interview" element={<InterviewForm />} />
           <Route path='/fetch-api' element={<FetchApi />} />
+          <Route path='/zustand' element={<ZustandDemo />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
