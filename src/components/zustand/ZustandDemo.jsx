@@ -3,9 +3,6 @@ import AddUser from './AddUser'
 import ComparisonPanel from './ComparisonPanel'
 import useUserStore from '../../store/userStore'
 
-// This is the page-level component. It composes smaller components.
-// Notice: NO store imports here — each child subscribes to only what it needs.
-// This is the "container vs presentational" pattern applied with Zustand.
 const ZustandDemo = () => {
     return (
         <div style={styles.page}>
