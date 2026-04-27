@@ -31,7 +31,7 @@ const ZustandDemo = () => {
                 </div>
                 <div style={styles.right}>
                     <AddUser />
-                    <StoreInspector />
+                    {/* <StoreInspector /> */}
                 </div>
             </div>
 

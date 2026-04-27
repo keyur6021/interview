@@ -13,7 +13,6 @@ const UserList = () => {
     // useShallow does a shallow comparison of the returned object's keys,
     // so Zustand won't see a new reference on every render — fixing the infinite loop.
     const { fetchUsers, removeUser, clearError, forceRefetch } = useUserStore(useShallow(selectActions))
-
     useEffect(() => {
         fetchUsers()
     }, [fetchUsers])

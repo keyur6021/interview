@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import InterviewForm from './InterviewForm';
+import MultiSelect from './MultiSelect';
 
 const CounterApp = () => {
     const [count, setCount] = useState(0);
@@ -30,6 +31,14 @@ const CounterApp = () => {
             <button onClick={() => setCount(count + 1)}>
                 Click me
             </button>
+            <div>
+                <p>Max: {max}</p>
+                <p>Min: {min}</p>
+                <p>Sum: {sum}</p>
+            </div>
+            <div>
+                <MultiSelect />
+            </div>
         </div>
     )
 }
