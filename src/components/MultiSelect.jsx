@@ -7,7 +7,9 @@ const MultiSelect = () => {
     const options = ["HTML", "CSS", "JavaScript", "React", "Node.js"]
 
     const handleSelect = (option) => {
-        setSelectedOptions((prev) => [...prev, option])
+        setSelectedOptions((prev) => selectedOptions?.includes(option) ? 
+        selectedOptions?.filter((item)=> item != option)
+         : [...prev, option])
         // setSelectedOptions((currentOptions) => {
         //     if (currentOptions.includes(option)) {
         //         return currentOptions.filter((item) => item !== option)
